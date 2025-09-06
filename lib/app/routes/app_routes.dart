@@ -1,10 +1,7 @@
+import 'package:english_learning_app/app/presentation/screens/home_screen.dart';
 import 'package:english_learning_app/app/presentation/screens/login_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
-
-// Import các màn hình của bạn
-import '../presentation/screens/home_screen.dart';
-import '../presentation/screens/add_screen.dart';
 
 // Cấu hình GoRouter
 final GoRouter router = GoRouter(
@@ -22,11 +19,11 @@ final GoRouter router = GoRouter(
         return const HomeScreen();
       },
     ),
-    GoRoute(
-      path: '/add',
-      builder: (BuildContext context, GoRouterState state) {
-        return const AddScreen();
-      },
-    ),
+    // GoRoute(
+    //   path: '/add',
+    //   builder: (BuildContext context, GoRouterState state) {
+    //     return const AddScreen();
+    //   },
+    // ),
   ],
 );
