@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "392107277511",
+    "project_id": "dacia-vocal",
+    "storage_bucket": "dacia-vocal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392107277511:android:4d3edb84c507b4ac0192e2",
+        "android_client_info": {
+          "package_name": "com.example.english_learning_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392107277511-18ut50ba76cj8f696h3bnkcgqu368n1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.english_learning_app",
+            "certificate_hash": "23621e74d7c8211e2137d94b2ebc659f8efd9807"
+          }
+        },
+        {
+          "client_id": "392107277511-dv5fjeoo2qspkvif6f7paflka60k4b4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIFnZS1xxoWy1oDW38uN6bPGF56IuuggQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392107277511-dv5fjeoo2qspkvif6f7paflka60k4b4e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "392107277511-tmaldcg3jiigckt4hvmr3l7vl1nhr3oc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.englishLearningApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
