@@ -30,5 +30,18 @@
   "sign_in_canceled": "Đăng nhập bị gián đoạn",
   "google_sign_in_exception": "Lỗi đăng nhập google '{}': '{}'",
   "no_user_data_in_store": "Không có dữ liệu người dùng",
-  "no_user_data_try_restarting": "Không có dữ liệu, thử khởi động lại"
+  "no_user_data_try_restarting": "Không có dữ liệu, thử khởi động lại",
+  "quiz": "Câu đố",
+  "manage": "Quản lý",
+  "add": "Thêm",
+  "setting": "Cài đặt",
+  "quiz_interval": "Thời gian đến câu kế tiếp",
+  "quiz_answer_time": "Thời gian trả lời câu hỏi",
+  "default_language": "Ngôn ngữ mặc định",
+  "learning_language": "Ngôn ngữ học",
+  "save": "Lưu",
+  "update_setting_successful": "Cập nhật cài đặt thành công",
+  "update_setting_failed": "Cập nhật cài đặt thất bại",
+  "minutes": "{} phút",
+  "seconds": "{} giây"
 }

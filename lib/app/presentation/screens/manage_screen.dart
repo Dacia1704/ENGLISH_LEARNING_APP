@@ -50,7 +50,6 @@ class _ManageScreenState extends State<ManageScreen> {
     _appUser = store.state.user;
     final userId = _appUser?.id;
     if (userId == null) return;
-    print(1);
 
     setState(() => _isLoading = true);
 

@@ -2,10 +2,10 @@ import 'package:english_learning_app/app/data/models/setting_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class UserModel {
-  final String id;
-  final String? email;
-  final String? fullName;
-  final SettingModel setting;
+  String id;
+  String? email;
+  String? fullName;
+  SettingModel setting;
 
   UserModel({
     required this.id,
@@ -28,6 +28,7 @@ class UserModel {
 
   Map<String, dynamic> toFirestore() {
     return {
+      'id': id,
       'email': email,
       'fullName': fullName,
       'setting': setting.toFirestore(),

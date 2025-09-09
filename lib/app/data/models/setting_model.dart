@@ -1,14 +1,16 @@
 class SettingModel {
-  final String defaultLanguage;
-  final List<String> learningLanguages;
-  final int quizInterval;
-  final int quizAnswerTime;
+  String defaultLanguage;
+  List<String> learningLanguages;
+  int quizInterval;
+  int quizAnswerTime;
+  bool quizEnable;
 
-  const SettingModel({
+  SettingModel({
     this.defaultLanguage = 'Vietnamese',
     this.learningLanguages = const ['English'],
     this.quizInterval = 30 * 60,
     this.quizAnswerTime = 10,
+    this.quizEnable = false,
   });
 
   /// Tạo từ Map (không phải DocumentSnapshot)
@@ -20,10 +22,11 @@ class SettingModel {
       ),
       quizInterval: data['quizInterval'] ?? 30 * 60,
       quizAnswerTime: data['quizAnswerTime'] ?? 10,
+      quizEnable: data["quizEnable"] ?? false,
     );
   }
 
-  factory SettingModel.defaultSetting() => const SettingModel();
+  factory SettingModel.defaultSetting() => SettingModel();
 
   Map<String, dynamic> toFirestore() {
     return {
@@ -31,11 +34,22 @@ class SettingModel {
       'learningLanguages': learningLanguages,
       'quizInterval': quizInterval,
       'quizAnswerTime': quizAnswerTime,
+      'quizEnable': quizEnable,
     };
   }
 
   @override
   String toString() {
-    return "SettingModel:{defaultLanguge: $defaultLanguage, learningLanguage: $learningLanguages, quizInterval: $quizInterval, quizAnswerTime: $quizAnswerTime}";
+    return "SettingModel:{defaultLanguge: $defaultLanguage, learningLanguage: $learningLanguages, quizInterval: $quizInterval, quizAnswerTime: $quizAnswerTime. quizEnable: $quizEnable}";
+  }
+
+  SettingModel copy() {
+    return SettingModel(
+      defaultLanguage: defaultLanguage,
+      learningLanguages: List<String>.from(learningLanguages),
+      quizInterval: quizInterval,
+      quizAnswerTime: quizAnswerTime,
+      quizEnable: quizEnable,
+    );
   }
 }

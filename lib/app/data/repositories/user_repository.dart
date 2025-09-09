@@ -12,11 +12,15 @@ class UserRepository {
     return UserModel.fromFirestore(doc);
   }
 
-  Future<void> updateUser(UserModel user) {
-    return _firestore.updateDocument(
-      FirestorePath.users.value,
-      user.id,
-      user.toFirestore(),
-    );
+  Future<void> updateUser(UserModel user) async {
+    try {
+      await _firestore.updateDocument(
+        FirestorePath.users.value,
+        user.id,
+        user.toFirestore(),
+      );
+    } catch (e) {
+      print(e);
+    }
   }
 }
